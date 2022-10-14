@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 09-27-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-quick-action-panel header="Edit Fields Action">
+        <lightning-record-edit-form record-id={recordId} object-api-name="Job_Application__c"
+                onsuccess={handleSuccess}>
+            <lightning-messages>
+            </lightning-messages>
+            <lightning-output-field field-name="Position__c">
+            </lightning-output-field>
+            <lightning-input-field field-name="Candidate_Name__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="Interviwer__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="Interview_Time_slot__c">
+            </lightning-input-field>
+            <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update">
+            </lightning-button>
+        </lightning-record-edit-form>
+    </lightning-quick-action-panel>
+</template>

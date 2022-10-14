@@ -1,0 +1,14 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 09-23-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <h2> Account Datatable</h2>
+    <template if:true={jobList}>
+        <lightning-datatable data={jobList} columns={columns} key-field="Id">
+        </lightning-datatable>
+    </template>
+</template>
